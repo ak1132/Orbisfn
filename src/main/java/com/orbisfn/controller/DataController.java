@@ -1,17 +1,13 @@
-package com.orbisfn.rest;
-
-import java.util.List;
+package com.orbisfn.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.orbisfn.entity.ETFs;
 
 @RestController
 public class DataController {
 
 	@RequestMapping("/etf")
-	public List<ETFs> getETFs() {
-		return null;
+	public String getETFs() {
+		return "Hello";
 	}
 }
