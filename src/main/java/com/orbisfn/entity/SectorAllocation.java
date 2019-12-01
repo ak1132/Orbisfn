@@ -24,9 +24,6 @@ public class SectorAllocation {
 	@JoinColumn(name = "fundsId", referencedColumnName = "id")
 	private Funds funds;
 
-	@Temporal(TemporalType.DATE)
-	private Date asofDate;
-
 	private String label;
 	private double value;
 
@@ -46,14 +43,6 @@ public class SectorAllocation {
 
 	public void setFunds(Funds funds) {
 		this.funds = funds;
-	}
-
-	public Date getAsofDate() {
-		return asofDate;
-	}
-
-	public void setAsofDate(Date asofDate) {
-		this.asofDate = asofDate;
 	}
 
 	public String getLabel() {
